@@ -2,8 +2,10 @@
 // ====================
 // KickAssembler
 
+// based on code from the internet <tm> found in a txt file
+// so I'm not the only contributor.
 
-
+// use as example only
 
 //--------------------------------------------------
 // Basic starter ($0801 - $080d)
@@ -69,7 +71,6 @@ Irq:
 	lda #$ff	 // clear the intrerrupt in VIC
 	sta $d019	 
 
-
 // some example code, wait for the next rasterline and the fiddle
 // with border and screen colour
 
@@ -79,7 +80,6 @@ Irq:
 
 	inc $d020
 	inc $d021
-
 
 	lda $d012
 	clc       // make sure carry is clear
